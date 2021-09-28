@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item autoOpenMetadata="" autoOpenComponent="" disableHTMLEditor="" disableCodeEditor="" revisionNumber="1" appName="GetSimple Extended CMS" appVersion="3.5.0a">
+  <pubDate>Sat, 21 Aug 2021 14:19:42 +0300</pubDate>
+  <creDate>Sat, 21 Aug 2021 14:19:42 +0300</creDate>
+  <title><![CDATA[Albums]]></title>
+  <url>albums</url>
+  <meta><![CDATA[]]></meta>
+  <metad><![CDATA[]]></metad>
+  <menu><![CDATA[]]></menu>
+  <menuOrder>0</menuOrder>
+  <menuStatus/>
+  <template>template.php</template>
+  <parent/>
+  <content><![CDATA[]]></content>
+  <component><![CDATA[]]></component>
+  <componentEnabled/>
+  <componentContent/>
+  <private/>
+  <author>dmitry</author>
+  <publisher>dmitry</publisher>
+  <lang><![CDATA[]]></lang>
+  <permalink><![CDATA[]]></permalink>
+  <image><![CDATA[]]></image>
+</item>
