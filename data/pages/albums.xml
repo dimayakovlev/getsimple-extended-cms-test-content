@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<item autoOpenMetadata="" autoOpenComponent="" disableHTMLEditor="" disableCodeEditor="" revisionNumber="1" appName="GetSimple Extended CMS" appVersion="3.5.0a">
+<item autoOpenMetadata="" disableEditor="" revisionNumber="1" appName="GetSimple Extended CMS" appVersion="3.5.0a">
   <pubDate>Sat, 21 Aug 2021 14:19:42 +0300</pubDate>
   <creDate>Sat, 21 Aug 2021 14:19:42 +0300</creDate>
+  <type>1</type>
   <title><![CDATA[Albums]]></title>
   <url>albums</url>
-  <meta><![CDATA[]]></meta>
-  <metad><![CDATA[]]></metad>
-  <menu><![CDATA[]]></menu>
-  <menuOrder>0</menuOrder>
-  <menuStatus/>
+  <meta><![CDATA[discography, albums, beatles, UK]]></meta>
+  <metad><![CDATA[List of the Beatles core catalogue studio albums]]></metad>
+  <menu><![CDATA[Albums]]></menu>
+  <menuOrder>2</menuOrder>
+  <menuStatus>1</menuStatus>
   <template>template.php</template>
   <parent/>
-  <content><![CDATA[]]></content>
-  <component><![CDATA[]]></component>
-  <componentEnabled/>
-  <componentContent/>
+  <content><![CDATA[&lt;p&gt;In our native United Kingdom, we released 12 studio albums, 13 extended plays (EPs), including one double EP, and 22 singles. Our &lt;strong&gt;UK discography&lt;/strong&gt; is considered the &lt;strong&gt;&quot;core catalogue&quot;&lt;/strong&gt;, as it contains the albums, EPs and singles released the way the band intended.&lt;/p&gt;
+&lt;p&gt;This is the list of our released 12 studio albums and compilation &lt;strong&gt;&quot;Past Masters&quot;&lt;/strong&gt; which include the recordings released from 1962 to 1970 that are not present on the UK albums.&lt;/p&gt;
+
+&lt;?php
+$children = getChildrenMulti(&#039;albums&#039;, array(&#039;title&#039;, &#039;image&#039;, &#039;slug&#039;));
+echo &#039;&lt;ul&gt;&#039;;
+foreach ($children as $child) {
+	echo &#039;&lt;li&gt;&lt;a href=&quot;&#039; . find_url($child[&#039;slug&#039;]). &#039;&quot; title=&quot;&#039; . $child[&#039;title&#039;] . &#039;&quot;&gt;&#039; . $child[&#039;title&#039;] . &#039; (&#039; . substr($child[&#039;slug&#039;], 0, 4) . &#039;)&lt;/a&gt;&lt;/li&gt;&#039;;
+}
+echo &#039;&lt;/ul&gt;&#039;;
+?&gt;
+
+&lt;p&gt;The Beatles&#039; UK discography was first released on CD in 1987 and 1988. The first four albums were released in mono only, while the remaining albums were issued in stereo only. However, the sound of the digital transfers of the discs, produced by Martin using the best equipment available during the early days of the format, no longer meets the standards achievable with 21st-century techniques. Thus, from 2005 to 2009, the original recordings were remastered using the latest technology, and &lt;a href=&quot;/our-partners/apple-records/&quot;&gt;Apple&lt;/a&gt; and EMI released this version of the Beatles&#039; catalogue on CD on 9 September 2009 in mono and stereo.&lt;/p&gt;]]></content>
   <private/>
   <author>admin</author>
   <publisher>admin</publisher>
-  <lang><![CDATA[]]></lang>
+  <lang><![CDATA[en]]></lang>
   <permalink><![CDATA[]]></permalink>
   <image><![CDATA[]]></image>
 </item>
